@@ -1,3 +1,5 @@
+This is a remake project of simple calculator and temperature converter that was coded using vanilla Javascript. the main project is simple calculator while temperature converter is additional feature of the site.  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
