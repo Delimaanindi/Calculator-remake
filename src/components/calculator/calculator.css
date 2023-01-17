@@ -1,0 +1,51 @@
+.cont {
+    background-color: rgb(183, 134, 206);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    width: 30rem;
+    margin-left: 35rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 2px #000 ;
+}
+
+.screen {
+    width: 25rem;
+    background-color: rgb(255, 248, 149);
+    height: 10rem;
+    margin-left: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px 4px inset rgb(255, 254, 224)
+}
+.operators {
+    background-color: rgb(210, 170, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    width: 25rem;
+    margin-left: 1.5rem;
+    border-radius: 8px;
+}
+.G-op {
+    padding: 1rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.op-btn {
+    border: none;
+    border-radius: 4px;
+    width: 3em;
+    height: 3em;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.op-btn:hover {
+    background-color: rgb(192, 192, 192);
+}
