@@ -6,30 +6,44 @@
     width: 30rem;
     margin-left: 35rem;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px 2px #000 ;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px #000;
+    /* box-shadow: 2px 2px 15px 5px inset rgb(247, 214, 255); */
 }
 
 .screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 25rem;
+    padding-right: 1rem;
+    justify-content: flex-end;
     background-color: rgb(255, 248, 149);
     height: 10rem;
     margin-left: 1.5rem;
     border-radius: 8px;
-    box-shadow: 4px 4px 10px 4px inset rgb(255, 254, 224)
+    box-shadow: 4px 4px 10px 4px inset rgb(255, 254, 224);
+    font-size: 23px;
+    font-weight: 500;
 }
-.operators {
+.btn-cont {
     background-color: rgb(210, 170, 229);
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    /* align-items: ; */
+    margin-top: 2rem;
     width: 25rem;
     margin-left: 1.5rem;
     border-radius: 8px;
+    box-shadow: 2px 2px 10px 2px inset rgb(0, 0, 0)
+}
+.operators {
+    width: 45%;
+    margin-top: 0rem;
 }
 .G-op {
-    padding: 1rem;
     margin-left: 1.5rem;
     display: flex;
     flex-direction: row;
@@ -39,13 +53,83 @@
 
 .op-btn {
     border: none;
-    border-radius: 4px;
-    width: 3em;
-    height: 3em;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
     margin-right: 1rem;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+    background-image: linear-gradient(rgb(157, 84, 125), rgb(238, 173, 210));
+}
+.op-btn2 {
+    border: none;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 1rem;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(rgb(126, 36, 131), rgb(136, 68, 148));
+}
+.op-btn:hover {
+    background-image: linear-gradient(rgb(238, 173, 210), rgb(236, 194, 218));
+}
+.op-btn2:hover {
+    background-image: linear-gradient(rgb(136, 68, 148), rgb(152, 93, 163));
 }
 
-.op-btn:hover {
-    background-color: rgb(192, 192, 192);
+.numbers {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+#num {
+    width: 3.5em;
+    height:3.5em;
+    margin-right: .5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    font-size: 17px;
+    font-family:sans-serif;
+    font-weight: 500;
+    background-image: linear-gradient(rgb(151, 151, 151), #fff);
+}
+
+#num:hover {
+    background-image: linear-gradient(rgb(182, 182, 182), #fff)
+}
+
+#num0 {
+    width: 3.5em;
+    height:3.5em;
+    margin-right: .5rem;
+    margin-left: 4.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: 500;
+    background-image: linear-gradient(rgb(151, 151, 151), #fff);
+}
+
+.op-btn3 {
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(rgb(126, 36, 131), rgb(136, 68, 148));
+}
+
+.op-btn3:hover {
+    background-image: linear-gradient(rgb(136, 68, 148), rgb(152, 93, 163));
 }
