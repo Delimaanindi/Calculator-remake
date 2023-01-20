@@ -1,29 +1,46 @@
-import React from "react";
+import React, {useState} from "react";
 import './convert.css'
 import {TbArrowsRightLeft} from 'react-icons/tb'
-import { useState } from "react";
+import { useNavigate } from "react-router";
+import {HiHome} from 'react-icons/hi'
+
 
 export default function Convert() {
     const [temp, setTemp] = useState('');
     const [temp2, setTemp2] = useState('');
     const [result, setResult] = useState('');
-    const [result2, setResult2] = useState('')
+    const [result2, setResult2] = useState('');
+    const navigate = useNavigate();
+
 
     const handleChange = (e) => {
         if(e.target.name === "celsius") {
             setTemp(e.target.value)
         }
-        setTemp2(e.target.value)
-       
+        setTemp2(e.target.value)   
     };
 
     const converter1 = () => {
-        setResult(((9/5) * temp) + 32).toString();
+        if(!temp) { 
+            setResult('')
+        } else if(temp) {
+            setResult(((9/5) * temp) + 32).toString();
+        };
+        
         }   
     const converter2 = () => {
+        if(!temp2) {
+            setResult2('')
+        } else if(temp2) {
             setResult2((5/9) * (temp2 -32)).toString();
-        }   
-    
+        }
+           
+        }  
+
+    function home(e) {
+        e.preventDefault();
+        navigate("/")
+    }
     return(
         <div>
             <h2>Temperature Converter</h2>
@@ -57,6 +74,7 @@ export default function Convert() {
                     <button className="convert" onClick={converter2}>Convert</button>
             </div>
             </div>
+            <HiHome size={48} id="home-btn" color="black" onClick={home}/>
         </div>
     )
 }

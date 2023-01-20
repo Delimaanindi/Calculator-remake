@@ -80,3 +80,10 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: -1rem;
 }
+
+#home-btn {
+    margin-top: 8rem;
+    margin-left: 70%;
+    cursor: pointer;
+}
+  
