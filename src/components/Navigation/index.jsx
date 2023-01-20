@@ -12,6 +12,11 @@ export default function Navigation() {
         e.preventDefault();
         navigate('/')
     }
+
+    const convert = (e) => {
+      e.preventDefault();
+      navigate('/converter')
+  }
     return(
         <div>
             <Navbar id="nav-cont">
@@ -21,7 +26,7 @@ export default function Navigation() {
             <Nav.Link href="https://delimaanindi.github.io/dindaportfolio.github.io/" id="link" target={"_blank"}>My portfolio</Nav.Link>
             <NavDropdown title="Features" id="link">
                 <NavDropdown.Item>
-                    <Nav.Link id="drop-item">Temperature Converter</Nav.Link>
+                    <Nav.Link id="drop-item" onClick={convert}>Temperature Converter</Nav.Link>
                 </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="https://www.linkedin.com/in/dinda-anindi-688525125/" target={"_blank"} id="link">My linkedin</Nav.Link>
